@@ -25,14 +25,23 @@ export default function MainImageDisplay() {
 		}
 	}
 	return (
-		<div>
-			<p>{currentImageNumber}</p>
-			<button onClick={decrementImageNumber}>
-				<img src={previousButton} alt="" />
+		<div className="main-image-container">
+			<button
+				className="button button-prev"
+				onClick={decrementImageNumber}
+			>
+				<img className="button-img" src={previousButton} alt="" />
 			</button>
-			<img src={imageArray[currentImageNumber]} alt="" />
-			<button onClick={incrementImageNumber}>
-				<img src={nextButton} alt="" />
+			<img
+				className="main-image"
+				src={imageArray[currentImageNumber]}
+				alt=""
+			/>
+			<button
+				className="button button-next"
+				onClick={incrementImageNumber}
+			>
+				<img className="button-img" src={nextButton} alt="" />
 			</button>
 		</div>
 	);
