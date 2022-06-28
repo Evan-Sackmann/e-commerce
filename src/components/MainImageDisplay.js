@@ -7,52 +7,30 @@ import image3 from "../images/image-product-3.jpg";
 import image4 from "../images/image-product-4.jpg";
 
 export default function MainImageDisplay() {
-	const [currentImageNumber, setCurrentImageNumber] = useState(1);
-	const [currentImage, setCurrentImage] = useState(image1);
-
-	function changeImage() {
-		switch (currentImageNumber) {
-			case 1:
-				setCurrentImage(image1);
-				break;
-			case 2:
-				setCurrentImage(image2);
-				break;
-			case 3:
-				setCurrentImage(image3);
-				break;
-			case 4:
-				setCurrentImage(image4);
-				break;
-			default:
-				return image1;
-		}
-	}
+	const [currentImageNumber, setCurrentImageNumber] = useState(0);
+	const imageArray = [image1, image2, image3, image4];
 
 	function incrementImageNumber() {
-		if (currentImageNumber < 4) {
+		if (currentImageNumber < 3) {
 			setCurrentImageNumber((prevNum) => prevNum + 1);
 		} else {
-			setCurrentImageNumber(1);
+			setCurrentImageNumber(0);
 		}
-		changeImage();
-		console.log(currentImageNumber);
 	}
 	function decrementImageNumber() {
-		if (currentImageNumber > 1) {
+		if (currentImageNumber > 0) {
 			setCurrentImageNumber((prevNum) => prevNum - 1);
 		} else {
-			setCurrentImageNumber(4);
+			setCurrentImageNumber(3);
 		}
-		changeImage();
-		console.log(currentImageNumber);
 	}
 	return (
 		<div>
+			<p>{currentImageNumber}</p>
 			<button onClick={decrementImageNumber}>
 				<img src={previousButton} alt="" />
 			</button>
-			<img src={currentImage} alt="" />
+			<img src={imageArray[currentImageNumber]} alt="" />
 			<button onClick={incrementImageNumber}>
 				<img src={nextButton} alt="" />
 			</button>
