@@ -9,9 +9,11 @@ function App() {
 		<div>
 			<NavBar />
 			<MainImageDisplay />
-			<TextContent />
-			<ItemQuantity />
-			<AddToCartButton />
+			<div className="item-info-container">
+				<TextContent />
+				<ItemQuantity />
+				<AddToCartButton />
+			</div>
 		</div>
 	);
 }

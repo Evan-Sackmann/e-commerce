@@ -14,12 +14,12 @@ export default function ItemQuantity() {
 	}
 
 	return (
-		<div>
-			<button onClick={removeItemFromCart}>
+		<div className="item-quantity">
+			<button className="button button-item" onClick={removeItemFromCart}>
 				<img src={iconMinus} alt="remove" />
 			</button>
-			{itemCount}
-			<button onClick={addItemToCart}>
+			<p>{itemCount}</p>
+			<button className="button button-item" onClick={addItemToCart}>
 				<img src={iconPlus} alt="add" />
 			</button>
 		</div>
