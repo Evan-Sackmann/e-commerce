@@ -22,6 +22,17 @@ code {
 	font-weight: bold;
 	color: hsl(219, 9%, 45%);
 }
+
+.menu-list-item {
+	list-style: none;
+	font-weight: bold;
+	font-size: 1.25rem;
+}
+
+.cart-modal-header {
+	font-weight: bold;
+}
+
 .content-company-name {
 	letter-spacing: 2px;
 }
@@ -72,7 +83,6 @@ code {
 .navigation-bar {
 	display: flex;
 	margin: 0 auto;
-	max-width: 90%;
 	padding: 1.5em;
 	align-items: center;
 	justify-content: space-between;
@@ -82,6 +92,17 @@ code {
 	display: flex;
 	align-items: center;
 	gap: 1em;
+}
+
+.menu-list {
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+	margin-top: 4em;
+}
+
+.menu-list-item {
+	cursor: pointer;
 }
 
 .icon-avatar {

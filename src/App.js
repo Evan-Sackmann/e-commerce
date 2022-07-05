@@ -12,7 +12,6 @@ function App() {
 			<div className="item-info-container">
 				<TextContent />
 				<ItemQuantity />
-				<AddToCartButton />
 			</div>
 		</div>
 	);
