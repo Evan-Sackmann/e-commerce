@@ -15,7 +15,7 @@ export default function ItemQuantity() {
 	}
 
 	return (
-		<>
+		<div className="cart-quantity-container">
 			<div className="item-quantity">
 				<button
 					className="button button-item"
@@ -29,6 +29,6 @@ export default function ItemQuantity() {
 				</button>
 			</div>
 			<AddToCartButton quantity={itemCount} />
-		</>
+		</div>
 	);
 }

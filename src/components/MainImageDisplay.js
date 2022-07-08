@@ -5,6 +5,7 @@ import image1 from "../images/image-product-1.jpg";
 import image2 from "../images/image-product-2.jpg";
 import image3 from "../images/image-product-3.jpg";
 import image4 from "../images/image-product-4.jpg";
+import ImageThumbnailContainer from "./ImageThumbnailContainer";
 
 export default function MainImageDisplay() {
 	const [currentImageNumber, setCurrentImageNumber] = useState(0);
@@ -32,11 +33,17 @@ export default function MainImageDisplay() {
 			>
 				<img className="button-img" src={previousButton} alt="" />
 			</button>
-			<img
-				className="main-image"
-				src={imageArray[currentImageNumber]}
-				alt=""
-			/>
+			<div className="image-container">
+				<img
+					className="main-image"
+					src={imageArray[currentImageNumber]}
+					alt=""
+				/>
+				<ImageThumbnailContainer
+					imageArray={imageArray}
+					changeImage={setCurrentImageNumber}
+				/>
+			</div>
 			<button
 				className="button button-next"
 				onClick={incrementImageNumber}

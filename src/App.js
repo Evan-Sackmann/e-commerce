@@ -8,10 +8,12 @@ function App() {
 	return (
 		<div>
 			<NavBar />
-			<MainImageDisplay />
-			<div className="item-info-container">
-				<TextContent />
-				<ItemQuantity />
+			<div className="main-content">
+				<MainImageDisplay />
+				<div className="item-info-container">
+					<TextContent />
+					<ItemQuantity />
+				</div>
 			</div>
 		</div>
 	);
