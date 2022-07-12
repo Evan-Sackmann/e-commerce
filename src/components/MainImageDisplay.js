@@ -42,6 +42,7 @@ export default function MainImageDisplay() {
 				<ImageThumbnailContainer
 					imageArray={imageArray}
 					changeImage={setCurrentImageNumber}
+					currentImageNumber={currentImageNumber}
 				/>
 			</div>
 			<button

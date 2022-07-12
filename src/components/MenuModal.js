@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ReactModal from "react-modal";
 import iconClose from "../images/icon-close.svg";
+import NavItems from "./NavItems";
 
 export default function MenuModal(props) {
 	const modalStyle = {
@@ -32,21 +33,15 @@ export default function MenuModal(props) {
 			onRequestClose={props.onRequestClose}
 			style={modalStyle}
 		>
-			<>
+			<div className="modal-menu">
 				<img
 					className="button"
 					onClick={props.onRequestClose}
 					src={iconClose}
 					alt=""
 				/>
-				<ul className="menu-list">
-					<li className="menu-list-item">Collections</li>
-					<li className="menu-list-item">Men</li>
-					<li className="menu-list-item">Women</li>
-					<li className="menu-list-item">About</li>
-					<li className="menu-list-item">Contact</li>
-				</ul>
-			</>
+				<NavItems />
+			</div>
 		</ReactModal>
 	);
 }

@@ -4,7 +4,7 @@ export const customStyles = {
 	},
 	content: {
 		top: "5em",
-		margin: "0 auto",
+		margin: "0 0 0 auto",
 		borderRadius: "10px",
 		width: "100%",
 		maxWidth: "400px",

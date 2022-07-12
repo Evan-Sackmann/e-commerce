@@ -8,6 +8,7 @@ import iconCartImage from "../images/image-product-1-thumbnail.jpg";
 import iconAvatar from "../images/image-avatar.png";
 import { customStyles } from "../utils/ModalStyling";
 import MenuModal from "./MenuModal";
+import NavItems from "./NavItems";
 
 export default function NavBar() {
 	const [showCartModal, setShowCartModal] = useState(false);
@@ -71,13 +72,16 @@ export default function NavBar() {
 		<nav className="navigation-bar">
 			<div className="navigation-bar-item">
 				<img
-					className="button"
+					className="button modal-menu"
 					onClick={openMenuModal}
 					src={iconMenu}
 					alt=""
 				/>
 				<img src={iconLogo} alt="" />
 			</div>
+			<span className="navbar-desktop">
+				<NavItems />
+			</span>
 			<div className="navigation-bar-item">
 				<img
 					className="button"
@@ -93,7 +97,7 @@ export default function NavBar() {
 				shouldCloseOnOverlayClick={true}
 				onRequestClose={() => closeMenuModal()}
 				ariaHideApp={false}
-			></MenuModal>
+			/>
 
 			<Modal
 				isOpen={showCartModal}
