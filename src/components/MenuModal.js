@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactModal from "react-modal";
 import iconClose from "../images/icon-close.svg";
 import NavItems from "./NavItems";

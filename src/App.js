@@ -1,4 +1,3 @@
-import AddToCartButton from "./components/AddToCartButton";
 import ItemQuantity from "./components/ItemQuantity";
 import MainImageDisplay from "./components/MainImageDisplay";
 import NavBar from "./components/NavBar";
