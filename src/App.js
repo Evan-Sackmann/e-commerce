@@ -1,21 +1,14 @@
-import ItemQuantity from "./components/ItemQuantity";
-import MainImageDisplay from "./components/MainImageDisplay";
-import NavBar from "./components/NavBar";
-import TextContent from "./components/TextContent";
+import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import ProductPage from "./components/ProductPage";
 
+const router = createBrowserRouter([
+	{
+		path: "/",
+		element: <div>Hello world</div>,
+	},
+]);
 function App() {
-	return (
-		<div>
-			<NavBar />
-			<div className="main-content">
-				<MainImageDisplay />
-				<div className="item-info-container">
-					<TextContent />
-					<ItemQuantity />
-				</div>
-			</div>
-		</div>
-	);
+	return <RouterProvider router={router} />;
 }
 
 export default App;
