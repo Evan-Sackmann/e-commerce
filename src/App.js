@@ -4,7 +4,7 @@ import ProductPage from "./components/ProductPage";
 const router = createBrowserRouter([
 	{
 		path: "/",
-		element: <div>Hello world</div>,
+		element: <ProductPage />,
 	},
 ]);
 function App() {
