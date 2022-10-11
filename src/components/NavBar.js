@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Navigate } from "react-router-dom";
 import Modal from "react-modal";
 import iconLogo from "../images/logo.svg";
 import iconMenu from "../images/icon-menu.svg";
@@ -42,7 +43,12 @@ export default function NavBar() {
 							alt="Remove from Cart"
 						/>
 					</div>
-					<button className="cart-checkout">Checkout</button>
+					<button
+						className="cart-checkout"
+						onClick={<Navigate to="/checkout" replace={true} />}
+					>
+						Checkout
+					</button>
 				</>
 			);
 		} else {
