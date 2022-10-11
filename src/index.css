@@ -305,6 +305,7 @@ code {
 	border: none;
 	cursor: pointer;
 	gap: 1em;
+	text-decoration: none;
 }
 
 @media (min-width: 800px) {

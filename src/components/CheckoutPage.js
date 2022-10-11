@@ -1,9 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function CheckoutPage() {
+	let productCount = localStorage.getItem("itemCount");
 	return (
 		<div>
-			<p>CheckoutPage</p>
+			<Link to="/">Back to page</Link>
+			<p>{productCount}</p>
 		</div>
 	);
 }
