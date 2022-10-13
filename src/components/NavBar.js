@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Navigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Modal from "react-modal";
 import iconLogo from "../images/logo.svg";
 import iconMenu from "../images/icon-menu.svg";

@@ -1,14 +1,14 @@
-import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import CheckoutPage from "./components/CheckoutPage";
 import ProductPage from "./components/ProductPage";
 
 const router = createBrowserRouter([
 	{
-		path: "/",
+		path: "/e-commerce",
 		element: <ProductPage />,
 	},
 	{
-		path: "checkout",
+		path: "/e-commerce/checkout",
 		element: <CheckoutPage />,
 	},
 ]);

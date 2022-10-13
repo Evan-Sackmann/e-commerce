@@ -5,7 +5,7 @@ export default function CheckoutPage() {
 	let productCount = localStorage.getItem("itemCount");
 	return (
 		<div>
-			<Link to="/">Back to page</Link>
+			<Link to="/e-commerce">Back to page</Link>
 			<p>{productCount}</p>
 		</div>
 	);
