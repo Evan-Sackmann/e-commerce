@@ -5,7 +5,7 @@ import iconLogo from "../images/logo.svg";
 import iconMenu from "../images/icon-menu.svg";
 import iconDelete from "../images/icon-delete.svg";
 import iconCart from "../images/icon-cart.svg";
-import iconCartImage from "../images/image-product-1-thumbnail.jpg";
+import data from "../data";
 import iconAvatar from "../images/image-avatar.png";
 import { customStyles } from "../utils/ModalStyling";
 import MenuModal from "./MenuModal";
@@ -21,11 +21,7 @@ export default function NavBar() {
 			return (
 				<>
 					<div className="cart-content">
-						<img
-							className="cart-image"
-							src={iconCartImage}
-							alt=""
-						/>
+						<img className="cart-image" src={data.thumb1} alt="" />
 						<div className="cart-content-info">
 							<p>Autumn Limited Edition Sneakers</p>
 							<p>
