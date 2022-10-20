@@ -2,7 +2,6 @@ import React from "react";
 import data from "../data";
 
 export default function TextContent() {
-	// console.log(data[0].price * data[0].discountAmount);
 	function calcDiscount() {
 		if (data[0].discount) {
 			return data[0].price * data[0].discountAmount;
