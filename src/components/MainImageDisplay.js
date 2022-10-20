@@ -1,18 +1,16 @@
 import React, { useState } from "react";
 import previousButton from "../images/icon-previous.svg";
 import nextButton from "../images/icon-next.svg";
-import data from "../data";
+import image1 from "../images/product1/image-product-1.jpg";
+import image2 from "../images/product1/image-product-2.jpg";
+import image3 from "../images/product1/image-product-3.jpg";
+import image4 from "../images/product1/image-product-4.jpg";
+// import data from "../data";
 import ImageThumbnailContainer from "./ImageThumbnailContainer";
 
-export default function MainImageDisplay() {
+export default function MainImageDisplay(props) {
 	const [currentImageNumber, setCurrentImageNumber] = useState(0);
-	const imageArray = [
-		data[0].image1,
-		data[0].image2,
-		data[0].image3,
-		data[0].image4,
-	];
-
+	const imageArray = [image1, image2, image3, image4];
 	function incrementImageNumber() {
 		if (currentImageNumber < 3) {
 			setCurrentImageNumber((prevNum) => prevNum + 1);

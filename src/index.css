@@ -308,6 +308,17 @@ code {
 	text-decoration: none;
 }
 
+.checkout {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: flex-start;
+}
+
+.image {
+	width: 100%;
+}
+
 @media (min-width: 800px) {
 	body {
 		width: 90%;

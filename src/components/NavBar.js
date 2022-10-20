@@ -10,6 +10,7 @@ import iconAvatar from "../images/image-avatar.png";
 import { customStyles } from "../utils/ModalStyling";
 import MenuModal from "./MenuModal";
 import NavItems from "./NavItems";
+import thumb1 from "../images/product1/image-product-1-thumbnail.jpg";
 
 export default function NavBar() {
 	const [showCartModal, setShowCartModal] = useState(false);
@@ -21,7 +22,7 @@ export default function NavBar() {
 			return (
 				<>
 					<div className="cart-content">
-						<img className="cart-image" src={data.thumb1} alt="" />
+						<img className="cart-image" src={thumb1} alt="" />
 						<div className="cart-content-info">
 							<p>Autumn Limited Edition Sneakers</p>
 							<p>
@@ -42,12 +43,6 @@ export default function NavBar() {
 					<Link to="checkout" className="cart-checkout">
 						Checkout
 					</Link>
-					{/* <button
-						className="cart-checkout"
-						onClick={<Navigate to="/checkout" replace={true} />}
-					>
-						Checkout
-					</button> */}
 				</>
 			);
 		} else {
